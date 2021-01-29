@@ -26,9 +26,9 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // OM JANGAN DI UBAH OM
             + 'VERSION:3.0\n' // INI WEEM RAMLAN GANS
-            + 'FN:RamlanGans\n' // UBAH INI
+            + 'FN:AlexAnanda\n' // UBAH INI
             + 'ORG:Owner BOT;\n' // UBAH INI
-            + 'TEL;type=CELL;type=VOICE;waid=6285559240360:+62 855-5924-0360\n' // UBAH INI
+            + 'TEL;type=CELL;type=VOICE;waid=6285789843218\n' // UBAH INI
             + 'END:VCARD' // WEEM DIHAPUS GUE BERHENTI UPDATE SCRIPT
 prefix = '#'
 blocked = []
@@ -139,7 +139,7 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6285559240360@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["6285789843218@s.whatsapp.net"] // replace this with your number
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -415,7 +415,7 @@ async function starts() {
 					break
 				case 'nulis':
 				case 'tulis':
-					if (args.length < 1) return reply('Yang mau di tulis apaan? titit kah?')
+					if (args.length < 1) return reply('Yang mau di tulis apaan? kuntul kah?')
 					teks = body.slice(7)
 					reply(mess.wait)
 					anu = await fetchJson(`https://mhankbarbar.tech/nulis?text=${teks}&apiKey=${BarBar}`, {method: 'get'})
