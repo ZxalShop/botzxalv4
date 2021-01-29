@@ -40,10 +40,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mhankbarbar/termux-wabot.git"
+    "url": "git+https://github.com/ZxalShop/botzxalv4.git"
   },
   "bugs": {
-    "url": "https://github.com/mhankbarbar/termux-wabot/issues"
+    "url": "https://github.com/ZxalShop/botzxalv4/issues"
   },
-  "homepage": "https://github.com/mhankbarbar/termux-wabot#readme"
+  "homepage": "https://github.com/ZxalShop/botzxalv4#readme"
 }
